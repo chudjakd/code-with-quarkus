@@ -1,6 +1,7 @@
 package org.acme;
 
 import io.quarkus.test.junit.QuarkusTest;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -16,6 +17,11 @@ public class GreetingResourceTest {
           .then()
              .statusCode(200)
              .body(is("Hello RESTEasy"));
+    }
+
+    @Test
+    public void testWithZeroBrain(){
+        Assertions.assertEquals("String","String");
     }
 
 }
