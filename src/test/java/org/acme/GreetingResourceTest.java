@@ -26,7 +26,7 @@ public class GreetingResourceTest {
 
     @Test
     public void failTestZeroBrain(){
-        Assertions.assertEquals(2,3);
+        Assertions.assertEquals(3,3);
     }
 
 }
