@@ -24,4 +24,9 @@ public class GreetingResourceTest {
         Assertions.assertEquals("String","String");
     }
 
+    @Test
+    public void failTestZeroBrain(){
+        Assertions.assertEquals(2,3);
+    }
+
 }
