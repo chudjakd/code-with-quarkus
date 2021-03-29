@@ -34,4 +34,10 @@ public class GreetingResourceTest {
         Assertions.assertEquals(10,10);
     }
 
+    @Test
+    public void failTestZeroBrain3(){
+        Assertions.assertEquals(15,15);
+    }
+
+
 }
