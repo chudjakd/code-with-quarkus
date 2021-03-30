@@ -1,11 +1,11 @@
 
-FROM registry.access.redhat.com/ubi8/openjdk-8
+FROM registry.access.redhat.com/ubi8/openjdk-11
 
 ENV APP_ROOT=/opt/app-root REL_ROOT=code-with-quarkus
 
 RUN mkdir ${APP_ROOT}
 
-COPY --chown=185:root pom.xml ${APP_ROOT}/${REL_ROOT}
+#COPY --chown=185:root pom.xml ${APP_ROOT}/${REL_ROOT}
 
 COPY --chown=185:root . ${APP_ROOT}/${REL_ROOT}
 
